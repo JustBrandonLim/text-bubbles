@@ -29,7 +29,7 @@ export default function App() {
       <div className="flex flex-col gap-5">
         {displayedMessages.map((message, i) => {
           return (
-            <p className="max-w-md p-3 break-words whitespace-pre-wrap bg-white rounded-xl w-fit" key={i}>
+            <p className="max-w-md p-3 break-words whitespace-pre-wrap bg-white shadow-xl rounded-xl w-fit" key={i}>
               {message}
             </p>
           );
@@ -38,7 +38,7 @@ export default function App() {
       <div
         className={`${
           inputMessage
-            ? "rounded-xl w-fit rounded-bl-none text-black break-words max-w-md whitespace-pre-wrap bg-white opacity-100"
+            ? "rounded-xl w-fit rounded-bl-none text-black shadow-xl break-words max-w-md whitespace-pre-wrap bg-white opacity-100"
             : "text-[#00FF00] opacity-0"
         }
             outline-none p-3 transition-opacity duration-300 ease-in-out`}
